@@ -18,16 +18,13 @@ body {
     margin-top: 30px;
 }
 
-.logo-placeholder {
-    width: 200px;
-    height: 100px;
+.logo {
+    width: 180px;        /* ajuste si besoin */
+    height: auto;
+    display: block;
     margin: 0 auto;
-    border: 2px dashed white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
 }
+
 
 
 .navbar {
