@@ -89,9 +89,25 @@ body {
 
 
 @media (max-width: 600px) {
-    .btn-cotisation {
-        font-size: 16px;
-        padding: 12px 20px;
+
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        padding: 6px;
+        max-width: 95vw;
+    }
+
+    .navbar a {
+        padding: 12px 8px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Les 2 derniers boutons passent en dessous et sont centrés */
+    .navbar a:nth-child(4),
+    .navbar a:nth-child(5) {
+        grid-column: span 1;
     }
 }
 
