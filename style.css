@@ -56,3 +56,32 @@ body {
     margin-top: 40px;
     font-size: 20px;
 }
+
+.cotisation {
+    margin-top: 25px;
+}
+
+.btn-cotisation {
+    display: inline-block;
+    background-color: #d4af37;   /* jaune doré */
+    color: #7b1e1e;              /* bordeaux */
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-cotisation:hover {
+    background-color: #c19b2e;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .btn-cotisation {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
