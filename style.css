@@ -89,25 +89,31 @@ body {
 
 
 @media (max-width: 600px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    padding: 8px;
+    max-width: 95vw;
+    margin: 20px auto 0;
+  }
 
-    .navbar {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 6px;
-        padding: 6px;
-        max-width: 95vw;
-    }
+  .navbar a {
+    padding: 12px 6px;
+    font-size: 14px;
+    text-align: center;
+  }
 
-    .navbar a {
-        padding: 12px 8px;
-        font-size: 14px;
-        text-align: center;
-    }
+  /* 1ère ligne : 3 boutons */
+  .navbar a:nth-child(1),
+  .navbar a:nth-child(2),
+  .navbar a:nth-child(3) {
+    grid-column: span 2;
+  }
 
-    /* Les 2 derniers boutons passent en dessous et sont centrés */
-    .navbar a:nth-child(4),
-    .navbar a:nth-child(5) {
-        grid-column: span 1;
-    }
+  /* 2ème ligne : 2 boutons centrés */
+  .navbar a:nth-child(4),
+  .navbar a:nth-child(5) {
+    grid-column: span 3;
+  }
 }
-
