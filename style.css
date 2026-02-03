@@ -63,20 +63,30 @@ body {
 
 .btn-cotisation {
     display: inline-block;
-    background-color: #d4af37;   /* jaune doré */
-    color: #7b1e1e;              /* bordeaux */
-    padding: 14px 24px;
+    background: linear-gradient(135deg, #e5c35a, #d4af37);
+    color: #7b1e1e;
+    padding: 16px 32px;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 8px;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+    border-radius: 10px;
+    border: 2px solid #c19b2e;
+    box-shadow: 0 6px 0 #b08f2c;
+    transition: all 0.2s ease;
 }
 
+
 .btn-cotisation:hover {
-    background-color: #c19b2e;
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #d4af37, #c19b2e);
+    transform: translateY(2px);
+    box-shadow: 0 4px 0 #9e7d22;
 }
+
+.btn-cotisation:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #9e7d22;
+}
+
 
 @media (max-width: 600px) {
     .btn-cotisation {
