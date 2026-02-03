@@ -89,31 +89,35 @@ body {
 
 
 @media (max-width: 600px) {
-  .navbar {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 8px;
-    padding: 8px;
-    max-width: 95vw;
-    margin: 20px auto 0;
-  }
 
-  .navbar a {
-    padding: 12px 6px;
-    font-size: 14px;
-    text-align: center;
-  }
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 8px;
+        padding: 8px;
+        max-width: 95vw;
+        margin: 20px auto 0;
+    }
 
-  /* 1ère ligne : 3 boutons */
-  .navbar a:nth-child(1),
-  .navbar a:nth-child(2),
-  .navbar a:nth-child(3) {
-    grid-column: span 2;
-  }
+    .navbar a {
+        padding: 12px 6px;
+        font-size: 14px;
+        text-align: center;
+    }
 
-  /* 2ème ligne : 2 boutons centrés */
-  .navbar a:nth-child(4),
-  .navbar a:nth-child(5) {
-    grid-column: span 3;
-  }
+    /* Ligne du haut : 3 boutons = 2 colonnes chacun */
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2),
+    .navbar a:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    /* Ligne du bas : 2 boutons = 2 colonnes chacun, centrés */
+    .navbar a:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    .navbar a:nth-child(5) {
+        grid-column: 4 / span 2;
+    }
 }
