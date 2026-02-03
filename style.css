@@ -28,27 +28,27 @@ body {
 
 .navbar {
     margin: 30px auto 0;
-    display: inline-flex;        /* important */
-    background-color: #d4af37;
-    padding: 0;                  /* important */
-    border-radius: 8px;
-    overflow: hidden;            /* important (coupe tout dépassement) */
+    display: flex;
+    justify-content: center;
+    gap: 10px;              /* espace entre boutons */
+    background: none;       /* plus de bandeau */
 }
 
 .navbar a {
-    display: block;              /* important */
+    display: inline-block;
+    background-color: #d4af37;
     padding: 15px 25px;
+    border-radius: 8px;
     text-decoration: none;
     color: #7b1e1e;
     font-weight: bold;
     transition: background-color 0.3s;
-    line-height: 1;              /* évite une “hauteur fantôme” */
 }
-
 
 .navbar a:hover {
     background-color: #c19b2e;
 }
+
 
 
 /* Texte principal */
