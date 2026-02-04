@@ -12,7 +12,8 @@
         <img src="images/logoaoc.png" alt="Logo AOC KEDGE Bordeaux" class="logo">
     </header>
 
-
+    <!-- Phrase de bienvenue (au-dessus du menu) -->
+    <p class="welcome">Bienvenue sur le site de AOC KEDGE Bordeaux</p>
 
     <!-- Menu de navigation -->
     <nav class="navbar">
@@ -23,16 +24,29 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Texte d'accueil -->
+    <!-- Actions HelloAsso (cotisation + cuvée) -->
     <main class="content">
-        <p>Bienvenue sur le site de AOC KEDGE Bordeaux</p>
-        <div class="cotisation">
+        <section class="actions">
+
+            <!-- Bouton cotisation -->
             <a href="https://www.helloasso.com/associations/association-appellation-controlee/adhesions/cotisation-aoc"
-                target="_blank"
-                class="btn-cotisation">
+               target="_blank"
+               class="btn-cotisation">
                 Prendre sa cotisation AOC
             </a>
-        </div>
+
+            <!-- Carte cuvée : photo + texte cliquables -->
+            <a href="METTRE_LIEN_HELLOASSO_CUVEE_ICI"
+               target="_blank"
+               class="card-link">
+                <img src="images/cuvee-promo.jpg" alt="Cuvée de promotion AOC" class="card-img">
+                <div class="card-text">
+                    <div class="card-title">Cuvée de promotion</div>
+                    <div class="card-subtitle">Acheter la cuvée AOC</div>
+                </div>
+            </a>
+
+        </section>
     </main>
 
 </body>
